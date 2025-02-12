@@ -1,0 +1,2 @@
+# kafka_producer/requirements.txt
+kafka-python
