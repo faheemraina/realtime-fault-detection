@@ -3,9 +3,8 @@
 ## Overview
 This project implements a **real-time fraud detection system** using **Apache Storm** to process streaming financial transactions and detect anomalies. It also leverages **Apache Spark** for batch analytics, model training, and advanced processing.
 
-## Why Apache Storm?
+##Apache Storm?
 - Real-time streaming capability makes it ideal for detecting fraud as transactions occur.
-- Supports complex event processing with custom spouts and bolts.
 - Can be integrated with Kafka for ingestion and Redis for fast lookups.
 
 ## Key Features & Technologies
@@ -34,6 +33,9 @@ This project implements a **real-time fraud detection system** using **Apache St
 ### Visualization & Monitoring
 - **Grafana/Kibana** dashboard for real-time monitoring.
 - **Prometheus** for performance metrics and alerting.
+
+### Architecture Diagram
+<img width="1152" alt="image" src="https://github.com/user-attachments/assets/138bb1d0-e3d6-47f7-a9b2-c8508cd94e7e" />
 
 ## Non-Trivial Aspects
 - **Multiple Data Streams**: Process transactions, user behavior, and geolocation data in parallel.
