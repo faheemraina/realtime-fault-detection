@@ -1,0 +1,26 @@
+# Specify Java files (Flink is Java-based)
+*.java linguist-language=Java
+
+# Specify Python files (Flink supports PyFlink)
+*.py linguist-language=Python
+
+# Specify Docker files
+Dockerfile linguist-language=Dockerfile
+*.dockerfile linguist-language=Dockerfile
+
+# Specify YAML files (Common for Kafka & Flink configurations)
+*.yml linguist-language=YAML
+*.yaml linguist-language=YAML
+
+# Specify Kafka & Flink related configuration files
+*.properties linguist-language=INI  # Kafka & Flink config files
+*.conf linguist-language=INI        # Flink job manager & task manager configs
+*.sql linguist-language=SQL         # Flink SQL scripts
+
+# Ignore non-code files from language stats
+*.md linguist-vendored
+*.txt linguist-vendored
+*.json linguist-vendored
+*.log linguist-vendored
+*.csv linguist-vendored
+
