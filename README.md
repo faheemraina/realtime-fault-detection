@@ -10,31 +10,31 @@ This project implements a **real-time fraud detection system** using:
 - Can be integrated with Kafka for ingestion and Redis for fast lookups.
 ## Project Src Structure
 project_root/
-│-- docker-compose.yml
-│-- kafka_producer/
-│   │-- producer.py
-│   │-- requirements.txt
-│-- flink_pipeline/
-│   │-- src/main/java/com/fraina/
-│   │   │-- operators/
-│   │   │   │-- FilteringFunction.java
-│   │   │   │-- FeatureExtractionFunction.java
-│   │   │   │-- AnomalyDetectionFunction.java
-│   │   │   │-- AlertFunction.java
-│   │   │-- sources/
-│   │   │   │-- KafkaTransactionSource.java
-│   │   │-- utils/
-│   │   │   │-- Constants.java
-│   │   │   │-- UtilityFunctions.java
-│   │   │   │-- ConfigLoader.java
-│   │   │-- pipeline/
-│   │   │   │-- FraudDetectionPipeline.java
-│   │   │-- interfaces/
-│   │   │   │-- TransactionProcessor.java
-│   │-- src/main/resources/
-│   │   │-- application.yaml
-│   │-- pom.xml
-│-- README.md
+-│-- docker-compose.yml
+-│-- kafka_producer/
+-│   │-- producer.py
+-│   │-- requirements.txt
+-│-- flink_pipeline/
+-│   │-- src/main/java/com/fraina/
+-│   │   │-- operators/
+-│   │   │   │-- FilteringFunction.java
+-│   │   │   │-- FeatureExtractionFunction.java
+-│   │   │   │-- AnomalyDetectionFunction.java
+-│   │   │   │-- AlertFunction.java
+-│   │   │-- sources/
+-│   │   │   │-- KafkaTransactionSource.java
+-│   │   │-- utils/
+-│   │   │   │-- Constants.java
+-│   │   │   │-- UtilityFunctions.java
+-│   │   │   │-- ConfigLoader.java
+-│   │   │-- pipeline/
+-│   │   │   │-- FraudDetectionPipeline.java
+-│   │   │-- interfaces/
+-│   │   │   │-- TransactionProcessor.java
+-│   │-- src/main/resources/
+-│   │   │-- application.yaml
+-│   │-- pom.xml
+-│-- README.md
 
 ## Local SetUp
 ## **1️⃣ Running Docker Compose**
@@ -65,7 +65,7 @@ flink run -c com.fraina.pipeline.FraudDetectionPipeline target/flink-fraud-detec
 
 ### Data Ingestion
 - Stream real-time transaction data from **Apache Kafka**.
-## **5️⃣ Understanding Flink Components Used**
+## **Understanding Flink Components Used**
 This Flink pipeline is composed of the following key components:
 
 ### **KafkaTransactionSource**
