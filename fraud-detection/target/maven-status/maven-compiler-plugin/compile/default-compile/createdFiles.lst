@@ -2,7 +2,6 @@ com/fraina/operators/FeatureExtractionFunction.class
 com/fraina/operators/FilteringFunction.class
 com/fraina/pipeline/FraudDetectionPipeline.class
 com/fraina/utils/ConfigLoader.class
-com/fraina/App.class
 com/fraina/sources/KafkaTransactionSource.class
 com/fraina/operators/AlertFunction.class
 com/fraina/operators/AnomalyDetectionFunction.class

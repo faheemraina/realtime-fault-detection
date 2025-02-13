@@ -10,6 +10,6 @@ public class AlertFunction extends RichMapFunction<String, String> {
     @Override
     public String map(String transactionJson) {
         JSONObject transaction = new JSONObject(transactionJson);
-        return "ALERT: Potential fraud detected for transaction " + transaction.getString("transaction_id");
+        return "ALERT: Potential fraud detected for transaction " + transaction.getLong("transaction_id");
     }
 }

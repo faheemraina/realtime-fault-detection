@@ -1,4 +1,3 @@
-# kafka_producer/producer.py
 from kafka import KafkaProducer
 import json
 import random
